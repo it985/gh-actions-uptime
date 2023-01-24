@@ -18,11 +18,11 @@ jobs:
         echo "[$now] Yes, it is." >> status_log.txt
     - name: Commit files
       run: |
-        git config --local user.email "colin@cengtech.com"
-        git config --local user.name "Colin Gagich (gagichce)"
+        git config --local user.email "2071916845@qq.com"
+        git config --local user.name "it985"
         git commit -m "It appears to be working right now." -a
     - name: Push changes
       uses: ad-m/github-push-action@a3fd843e49cd58d296bdd2431c4853569a1b900f
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.TOKEN }}
         branch: ${{ github.ref }}
